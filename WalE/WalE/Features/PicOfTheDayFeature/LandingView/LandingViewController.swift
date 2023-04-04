@@ -92,14 +92,40 @@ class LandingViewController: UIViewController, LandingViewControllerProtocol {
     //MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .lightGray
         setupUI()
         viewModel.getImageOfTheDay()
     }
     
     //MARK:- Utility methods
     func setupUI(){
+        
+        view.addSubview(containerView)
         self.navigationController?.isNavigationBarHidden = true
+        
+        containerView.addSubview(imageView)
+        containerView.addSubview(topContainerView)
+        containerView.addSubview(bottomContainerView)
+        
+        topContainerView.addSubview(topBaseView)
+        topContainerView.addSubview(lblCaption)
+        
+        bottomContainerView.addSubview(bottomBaseView)
+        bottomContainerView.addSubview(lblDescription)
+        bottomContainerView.addSubview(btnReadMore)
+        
+        containerView.anchor(topAnchor: view.topAnchor, leftAnchor: view.leftAnchor, bottomAnchor: view.bottomAnchor, rightAnchor: view.rightAnchor)
+        imageView.anchor(topAnchor: containerView.topAnchor, leftAnchor: containerView.leftAnchor, bottomAnchor: containerView.bottomAnchor, rightAnchor: containerView.rightAnchor)
+        
+        topContainerView.anchor(topAnchor: containerView.topAnchor, topPadding: 50, leftAnchor: containerView.leftAnchor, leftPadding: 20, rightAnchor: containerView.rightAnchor, rightPadding: 20)
+        topBaseView.anchor(topAnchor: topContainerView.topAnchor, leftAnchor: topContainerView.leftAnchor, bottomAnchor: topContainerView.bottomAnchor, rightAnchor: topContainerView.rightAnchor)
+        lblCaption.anchor(topAnchor: topContainerView.topAnchor, topPadding: 10, leftAnchor: topContainerView.leftAnchor, leftPadding: 10,bottomAnchor: topContainerView.bottomAnchor, bottomPadding: 10, rightAnchor: topContainerView.rightAnchor, rightPadding: 10)
+        
+        bottomContainerView.anchor(leftAnchor: containerView.leftAnchor, leftPadding: 20, bottomAnchor: containerView.bottomAnchor, bottomPadding: 50, rightAnchor: containerView.rightAnchor, rightPadding: 20)
+        bottomBaseView.anchor(topAnchor: bottomContainerView.topAnchor,leftAnchor: bottomContainerView.leftAnchor, bottomAnchor: bottomContainerView.bottomAnchor, rightAnchor: bottomContainerView.rightAnchor)
+        btnReadMore.anchor(leftAnchor: bottomContainerView.leftAnchor, leftPadding: 20, bottomAnchor: bottomContainerView.bottomAnchor, bottomPadding: 20, rightAnchor: bottomContainerView.rightAnchor, rightPadding: 20, height: 40)
+        lblDescription.anchor(topAnchor: bottomContainerView.topAnchor, topPadding: 20, leftAnchor: bottomContainerView.leftAnchor, leftPadding: 20, bottomAnchor: btnReadMore.topAnchor, bottomPadding: 10, rightAnchor: bottomContainerView.rightAnchor, rightPadding: 20)
+        
     }
     
     //MARK: - Button Actions
@@ -109,7 +135,17 @@ class LandingViewController: UIViewController, LandingViewControllerProtocol {
 }
 extension LandingViewController: LandingViewModelDelegateProtocol{
     func renderRecordToUI() {
-        print("\n\nIn Landing View Controller")
-        print(viewModel.todayImageRecord)
+        if let record = viewModel.todayImageRecord{
+            lblCaption.text = record.title
+            lblDescription.text = "Description: \n\(Utlity.getShortDescription(fromContent: record.explanation!))..."
+            if let imageData = record.imageContentData{
+                imageView.image = UIImage(data: imageData)
+            }else{
+                guard let url = URL(string: record.url!) else { return }
+                if let imgData = try? Data(contentsOf: url){
+                    imageView.image = UIImage(data: imgData)
+                }
+            }
+        }
     }
 }

@@ -31,6 +31,7 @@
 		80D53AF329DC502D0097E163 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF229DC502D0097E163 /* NetworkMonitor.swift */; };
 		80D53AF529DC520B0097E163 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */; };
 		80D53AF829DC530D0097E163 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF729DC530D0097E163 /* Utility.swift */; };
+		80D53AFA29DC5AFB0097E163 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF929DC5AFB0097E163 /* UIVIew+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		80D53AF229DC502D0097E163 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		80D53AF729DC530D0097E163 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		80D53AF929DC5AFB0097E163 /* UIVIew+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				80D53AF729DC530D0097E163 /* Utility.swift */,
+				80D53AF929DC5AFB0097E163 /* UIVIew+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
+				80D53AFA29DC5AFB0097E163 /* UIVIew+Extensions.swift in Sources */,
 				80D53AF829DC530D0097E163 /* Utility.swift in Sources */,
 				80D53AED29DC43E70097E163 /* Coordinator.swift in Sources */,
 				80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */,
