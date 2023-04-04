@@ -14,6 +14,7 @@
 		80D53AB529DC33F70097E163 /* WalETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AB429DC33F70097E163 /* WalETests.swift */; };
 		80D53ABF29DC33F80097E163 /* WalEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ABE29DC33F80097E163 /* WalEUITests.swift */; };
 		80D53AC129DC33F80097E163 /* WalEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AC029DC33F80097E163 /* WalEUITestsLaunchTests.swift */; };
+		80D53AD129DC36400097E163 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD029DC36400097E163 /* DataModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		80D53ABA29DC33F80097E163 /* WalEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D53ABE29DC33F80097E163 /* WalEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalEUITests.swift; sourceTree = "<group>"; };
 		80D53AC029DC33F80097E163 /* WalEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80D53AD029DC36400097E163 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,8 @@
 		80D53A9C29DC33F70097E163 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				80D53ACF29DC362F0097E163 /* DataModels */,
+				80D53ACD29DC35EF0097E163 /* NetworkModule */,
 				80D53A9D29DC33F70097E163 /* AppDelegate.swift */,
 				80D53A9F29DC33F70097E163 /* SceneDelegate.swift */,
 				80D53AA629DC33F70097E163 /* Assets.xcassets */,
@@ -119,6 +123,21 @@
 				80D53AC029DC33F80097E163 /* WalEUITestsLaunchTests.swift */,
 			);
 			path = WalEUITests;
+			sourceTree = "<group>";
+		};
+		80D53ACD29DC35EF0097E163 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		80D53ACF29DC362F0097E163 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				80D53AD029DC36400097E163 /* DataModels.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D53AD129DC36400097E163 /* DataModels.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
 			);
