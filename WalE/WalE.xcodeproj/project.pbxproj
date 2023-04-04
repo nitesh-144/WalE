@@ -17,6 +17,7 @@
 		80D53AD129DC36400097E163 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD029DC36400097E163 /* DataModels.swift */; };
 		80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD229DC36B40097E163 /* APIConfiguration.swift */; };
 		80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD429DC37EE0097E163 /* NetworkClient.swift */; };
+		80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD729DC38B40097E163 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		80D53AD029DC36400097E163 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		80D53AD229DC36B40097E163 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		80D53AD429DC37EE0097E163 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		80D53AD729DC38B40097E163 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		80D53A9C29DC33F70097E163 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				80D53AD629DC38950097E163 /* Composition */,
 				80D53ACF29DC362F0097E163 /* DataModels */,
 				80D53ACD29DC35EF0097E163 /* NetworkModule */,
 				80D53A9D29DC33F70097E163 /* AppDelegate.swift */,
@@ -144,6 +147,14 @@
 				80D53AD029DC36400097E163 /* DataModels.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		80D53AD629DC38950097E163 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				80D53AD729DC38B40097E163 /* TestViewController.swift */,
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
+				80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */,
 				80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
