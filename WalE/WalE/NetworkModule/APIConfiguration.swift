@@ -28,3 +28,34 @@ protocol APIRequestable{
     var httpMethod: String { get }
     func makeAPIRequest() -> URLRequest?
 }
+
+enum APIRequestType: APIRequestable{
+    case getImageOfTheDay
+    
+    var endPoint: String{
+        switch self{
+        case .getImageOfTheDay:
+            return APIEndPoints.baseURL + APIEndPoints.picOfTheDayEndPoint
+        }
+    }
+    
+    var httpMethod: String{
+        switch self{
+        case .getImageOfTheDay:
+            return "GET"
+        }
+    }
+    
+    func makeAPIRequest() -> URLRequest? {
+        
+        var endPoint = endPoint
+        if let apiKeyToUse = APIEndPoints.apiKey{
+            endPoint += "?api_key=\(apiKeyToUse)"
+        }
+        guard let url = URL(string: endPoint) else { return nil }
+        var request = URLRequest(url: url)
+        request.httpMethod = httpMethod
+        return request
+    }
+    
+}
