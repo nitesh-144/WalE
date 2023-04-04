@@ -25,6 +25,8 @@
 		80D53AE429DC3F480097E163 /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AE329DC3F480097E163 /* CommonService.swift */; };
 		80D53AE929DC42F20097E163 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AE829DC42F20097E163 /* LandingViewController.swift */; };
 		80D53AEB29DC42FF0097E163 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEA29DC42FF0097E163 /* LandingViewModel.swift */; };
+		80D53AED29DC43E70097E163 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEC29DC43E70097E163 /* Coordinator.swift */; };
+		80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		80D53AE329DC3F480097E163 /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
 		80D53AE829DC42F20097E163 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		80D53AEA29DC42FF0097E163 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		80D53AEC29DC43E70097E163 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				80D53AE729DC42E00097E163 /* LandingView */,
+				80D53AEC29DC43E70097E163 /* Coordinator.swift */,
 			);
 			path = PicOfTheDayFeature;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			children = (
 				80D53AE829DC42F20097E163 /* LandingViewController.swift */,
 				80D53AEA29DC42FF0097E163 /* LandingViewModel.swift */,
+				80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */,
 			);
 			path = LandingView;
 			sourceTree = "<group>";
@@ -346,6 +352,8 @@
 				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
+				80D53AED29DC43E70097E163 /* Coordinator.swift in Sources */,
+				80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
 				80D53AE429DC3F480097E163 /* CommonService.swift in Sources */,
 				80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */,
