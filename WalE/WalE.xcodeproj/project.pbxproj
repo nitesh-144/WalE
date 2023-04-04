@@ -16,6 +16,7 @@
 		80D53AC129DC33F80097E163 /* WalEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AC029DC33F80097E163 /* WalEUITestsLaunchTests.swift */; };
 		80D53AD129DC36400097E163 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD029DC36400097E163 /* DataModels.swift */; };
 		80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD229DC36B40097E163 /* APIConfiguration.swift */; };
+		80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD429DC37EE0097E163 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		80D53AC029DC33F80097E163 /* WalEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalEUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80D53AD029DC36400097E163 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		80D53AD229DC36B40097E163 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		80D53AD429DC37EE0097E163 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				80D53AD229DC36B40097E163 /* APIConfiguration.swift */,
+				80D53AD429DC37EE0097E163 /* NetworkClient.swift */,
 			);
 			path = NetworkModule;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D53AD129DC36400097E163 /* DataModels.swift in Sources */,
+				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
 				80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */,
