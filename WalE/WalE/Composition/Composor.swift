@@ -45,8 +45,8 @@ extension Composor: CommonServiceListenerProtocol{
         alertController.addAction(okAlertAction)
         
         if let navVC = self.rootNavigationVC{
-            DispatchQueue.main.async { [weak self] in
-                self?.navVC.present(alertController, animated: true)
+            DispatchQueue.main.async {
+                navVC.present(alertController, animated: true)
             }
         }
     }
