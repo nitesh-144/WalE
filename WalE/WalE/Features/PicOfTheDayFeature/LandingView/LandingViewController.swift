@@ -30,6 +30,14 @@ class LandingViewController: UIViewController, LandingViewControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        ApiClient.shared.getImageOfTheDay { imageData, errorType in
+            if errorType == .internetConnectionError{
+                print("\nInternet is not connected")
+            }else{
+                print("\nInternet connected\n")
+                print(imageData)
+            }
+        }
     }
 }
 extension LandingViewController: LandingViewModelDelegateProtocol{

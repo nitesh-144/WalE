@@ -18,21 +18,29 @@ class ApiClient: NetworkModuleProtocol{
     static let shared: ApiClient = ApiClient()
     
     func getImageOfTheDay(completion: @escaping (PicOfTheDay?, NetworkErrorType) -> Void) {
-        URLSession.shared.dataTask(with: APIRequestType.getImageOfTheDay.makeAPIRequest()!) { responseData, urlResponse, error in
-            if error == nil{
-                if let httpResponse = urlResponse as? HTTPURLResponse, (200 ... 300).contains(httpResponse.statusCode){
-                    do{
-                        let apiResponseModel  = try JSONDecoder().decode(PicOfTheDay.self, from: responseData!)
-                        completion(apiResponseModel, .none)
-                    }catch{
+        
+        NetworkMonitor.shared.startMonitoring { status in
+            switch status{
+            case .connectionError:
+                completion(nil, .internetConnectionError)
+            case .connected:
+                URLSession.shared.dataTask(with: APIRequestType.getImageOfTheDay.makeAPIRequest()!) { responseData, urlResponse, error in
+                    if error == nil{
+                        if let httpResponse = urlResponse as? HTTPURLResponse, (200 ... 300).contains(httpResponse.statusCode){
+                            do{
+                                let apiResponseModel  = try JSONDecoder().decode(PicOfTheDay.self, from: responseData!)
+                                completion(apiResponseModel, .none)
+                            }catch{
+                                completion(nil, .apiServiceError)
+                            }
+                        }else{
+                            completion(nil, .apiServiceError)
+                        }
+                    }else{
                         completion(nil, .apiServiceError)
                     }
-                }else{
-                    completion(nil, .apiServiceError)
-                }
-            }else{
-                completion(nil, .apiServiceError)
+                }.resume()
             }
-        }.resume()
+        }
     }
 }
