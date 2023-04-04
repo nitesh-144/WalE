@@ -14,14 +14,10 @@ class TestViewController: UIViewController {
 
         
         view.backgroundColor = .green
-        // Do any additional setup after loading the view.
-        ApiClient.shared.getImageOfTheDay { imageData, error in
-            if error == .none{
-                print(imageData)
-            }else{
-                print("error occured")
-            }
-        }
+        
+        let service = CommonService(withApiService: ApiClient.shared, offlineStore: OfflineStore.shared)
+        let model = service.offlineStoreService.getImageData()
+        print(model)
     }
     
 
