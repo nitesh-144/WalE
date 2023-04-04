@@ -20,6 +20,8 @@
 		80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD729DC38B40097E163 /* TestViewController.swift */; };
 		80D53ADB29DC3A0C0097E163 /* OfflineStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */; };
 		80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */; };
+		80D53AE129DC3B4A0097E163 /* CDImageData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ADF29DC3B4A0097E163 /* CDImageData+CoreDataClass.swift */; };
+		80D53AE229DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AE029DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		80D53AD729DC38B40097E163 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineStoreClient.swift; sourceTree = "<group>"; };
 		80D53ADD29DC3A890097E163 /* WalE_DB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalE_DB.xcdatamodel; sourceTree = "<group>"; };
+		80D53ADF29DC3B4A0097E163 /* CDImageData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImageData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		80D53AE029DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImageData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 		80D53AD929DC39D10097E163 /* OfflineStoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				80D53ADF29DC3B4A0097E163 /* CDImageData+CoreDataClass.swift */,
+				80D53AE029DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift */,
 				80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */,
 				80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */,
 			);
@@ -303,11 +309,13 @@
 			files = (
 				80D53AD129DC36400097E163 /* DataModels.swift in Sources */,
 				80D53ADB29DC3A0C0097E163 /* OfflineStoreClient.swift in Sources */,
+				80D53AE229DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift in Sources */,
 				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
 				80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */,
+				80D53AE129DC3B4A0097E163 /* CDImageData+CoreDataClass.swift in Sources */,
 				80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
