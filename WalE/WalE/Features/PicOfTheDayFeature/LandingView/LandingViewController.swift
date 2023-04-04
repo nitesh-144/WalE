@@ -143,7 +143,9 @@ extension LandingViewController: LandingViewModelDelegateProtocol{
             }else{
                 guard let url = URL(string: record.url!) else { return }
                 if let imgData = try? Data(contentsOf: url){
-                    imageView.image = UIImage(data: imgData)
+                    DispatchQueue.main.async {[weak self] in
+                        self?.imageView.image = UIImage(data: imgData)
+                    }
                 }
             }
         }
