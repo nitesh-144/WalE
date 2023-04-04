@@ -29,6 +29,8 @@
 		80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */; };
 		80D53AF129DC48AF0097E163 /* Composor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF029DC48AF0097E163 /* Composor.swift */; };
 		80D53AF329DC502D0097E163 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF229DC502D0097E163 /* NetworkMonitor.swift */; };
+		80D53AF529DC520B0097E163 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */; };
+		80D53AF829DC530D0097E163 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF729DC530D0097E163 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewBuilder.swift; sourceTree = "<group>"; };
 		80D53AF029DC48AF0097E163 /* Composor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composor.swift; sourceTree = "<group>"; };
 		80D53AF229DC502D0097E163 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		80D53AF729DC530D0097E163 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		80D53A9C29DC33F70097E163 /* WalE */ = {
 			isa = PBXGroup;
 			children = (
+				80D53AF629DC53000097E163 /* Utilities */,
 				80D53AE529DC42BB0097E163 /* Features */,
 				80D53AD929DC39D10097E163 /* OfflineStoreModule */,
 				80D53AD629DC38950097E163 /* Composition */,
@@ -191,6 +196,7 @@
 				80D53AE029DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift */,
 				80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */,
 				80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */,
+				80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */,
 			);
 			path = OfflineStoreModule;
 			sourceTree = "<group>";
@@ -220,6 +226,14 @@
 				80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */,
 			);
 			path = LandingView;
+			sourceTree = "<group>";
+		};
+		80D53AF629DC53000097E163 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80D53AF729DC530D0097E163 /* Utility.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +372,7 @@
 				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
+				80D53AF829DC530D0097E163 /* Utility.swift in Sources */,
 				80D53AED29DC43E70097E163 /* Coordinator.swift in Sources */,
 				80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */,
 				80D53AF329DC502D0097E163 /* NetworkMonitor.swift in Sources */,
@@ -366,6 +381,7 @@
 				80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */,
 				80D53AF129DC48AF0097E163 /* Composor.swift in Sources */,
 				80D53AE129DC3B4A0097E163 /* CDImageData+CoreDataClass.swift in Sources */,
+				80D53AF529DC520B0097E163 /* UserDefaultsManager.swift in Sources */,
 				80D53AEB29DC42FF0097E163 /* LandingViewModel.swift in Sources */,
 				80D53AE929DC42F20097E163 /* LandingViewController.swift in Sources */,
 				80D53AD329DC36B40097E163 /* APIConfiguration.swift in Sources */,
