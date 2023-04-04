@@ -19,6 +19,7 @@
 		80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD429DC37EE0097E163 /* NetworkClient.swift */; };
 		80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AD729DC38B40097E163 /* TestViewController.swift */; };
 		80D53ADB29DC3A0C0097E163 /* OfflineStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */; };
+		80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		80D53AD429DC37EE0097E163 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		80D53AD729DC38B40097E163 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineStoreClient.swift; sourceTree = "<group>"; };
+		80D53ADD29DC3A890097E163 /* WalE_DB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalE_DB.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				80D53ADA29DC3A0C0097E163 /* OfflineStoreClient.swift */,
+				80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */,
 			);
 			path = OfflineStoreModule;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				80D53AD129DC36400097E163 /* DataModels.swift in Sources */,
 				80D53ADB29DC3A0C0097E163 /* OfflineStoreClient.swift in Sources */,
+				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
@@ -638,6 +642,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80D53ADC29DC3A890097E163 /* WalE_DB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80D53ADD29DC3A890097E163 /* WalE_DB.xcdatamodel */,
+			);
+			currentVersion = 80D53ADD29DC3A890097E163 /* WalE_DB.xcdatamodel */;
+			path = WalE_DB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 80D53A9229DC33F70097E163 /* Project object */;
 }
