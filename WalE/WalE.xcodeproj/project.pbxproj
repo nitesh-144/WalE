@@ -32,6 +32,7 @@
 		80D53AF529DC520B0097E163 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */; };
 		80D53AF829DC530D0097E163 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF729DC530D0097E163 /* Utility.swift */; };
 		80D53AFA29DC5AFB0097E163 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF929DC5AFB0097E163 /* UIVIew+Extensions.swift */; };
+		80D53AFC29DC638A0097E163 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AFB29DC638A0097E163 /* FullScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		80D53AF429DC520B0097E163 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		80D53AF729DC530D0097E163 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		80D53AF929DC5AFB0097E163 /* UIVIew+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extensions.swift"; sourceTree = "<group>"; };
+		80D53AFB29DC638A0097E163 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			children = (
 				80D53AE729DC42E00097E163 /* LandingView */,
 				80D53AEC29DC43E70097E163 /* Coordinator.swift */,
+				80D53AFB29DC638A0097E163 /* FullScreenViewController.swift */,
 			);
 			path = PicOfTheDayFeature;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				80D53AE229DC3B4A0097E163 /* CDImageData+CoreDataProperties.swift in Sources */,
 				80D53ADE29DC3A890097E163 /* WalE_DB.xcdatamodeld in Sources */,
 				80D53AD529DC37EE0097E163 /* NetworkClient.swift in Sources */,
+				80D53AFC29DC638A0097E163 /* FullScreenViewController.swift in Sources */,
 				80D53A9E29DC33F70097E163 /* AppDelegate.swift in Sources */,
 				80D53AFA29DC5AFB0097E163 /* UIVIew+Extensions.swift in Sources */,
 				80D53AF829DC530D0097E163 /* Utility.swift in Sources */,

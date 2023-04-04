@@ -130,7 +130,10 @@ class LandingViewController: UIViewController, LandingViewControllerProtocol {
     
     //MARK: - Button Actions
     @objc func showPicOfTheDayInFullScreen(){
-        print("\nShow full pic of the day - action")
+        let detailVC = FullScreenViewController()
+        detailVC.imageToShow = self.imageView.image
+        detailVC.modalPresentationStyle = .overFullScreen
+        present(detailVC, animated: true)
     }
 }
 extension LandingViewController: LandingViewModelDelegateProtocol{

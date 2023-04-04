@@ -27,6 +27,8 @@ class CommonService: CommonServiceProtocol{
     weak var delegate: CommonServiceListenerProtocol?
     var apiService: NetworkModuleProtocol
     var offlineStoreService: OfflineServiceProtocol
+    var errorFlag: NetworkErrorType = .none
+    var isPastData = false
     
     init(withApiService apiService: NetworkModuleProtocol, offlineStore dbStore: OfflineServiceProtocol){
         self.apiService = apiService
@@ -37,6 +39,7 @@ class CommonService: CommonServiceProtocol{
         
         let pastRecordDate = UserDefaultsManager.shared.getLastRecordSavedDate()
         let pastRecordFlag = pastRecordDate != nil
+        isPastData = pastRecordFlag
         let isToFetchFreshImageData = !pastRecordFlag || Utlity.checkTodayWithSavedRecordDate(savedRecordDate: pastRecordDate!)
         
         if isToFetchFreshImageData{
@@ -44,6 +47,7 @@ class CommonService: CommonServiceProtocol{
             print("\nGetting from server\n")
             apiService.getImageOfTheDay {[weak self] imageData, errorCases in
                 //Remove loading
+                self?.errorFlag = errorCases
                 switch errorCases{
                 case .internetConnectionError, .apiServiceError:
                     if pastRecordFlag{
