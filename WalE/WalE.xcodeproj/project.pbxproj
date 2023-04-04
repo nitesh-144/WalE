@@ -27,6 +27,7 @@
 		80D53AEB29DC42FF0097E163 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEA29DC42FF0097E163 /* LandingViewModel.swift */; };
 		80D53AED29DC43E70097E163 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEC29DC43E70097E163 /* Coordinator.swift */; };
 		80D53AEF29DC44DE0097E163 /* LandingViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */; };
+		80D53AF129DC48AF0097E163 /* Composor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D53AF029DC48AF0097E163 /* Composor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		80D53AEA29DC42FF0097E163 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 		80D53AEC29DC43E70097E163 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		80D53AEE29DC44DE0097E163 /* LandingViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewBuilder.swift; sourceTree = "<group>"; };
+		80D53AF029DC48AF0097E163 /* Composor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				80D53AD729DC38B40097E163 /* TestViewController.swift */,
 				80D53AE329DC3F480097E163 /* CommonService.swift */,
+				80D53AF029DC48AF0097E163 /* Composor.swift */,
 			);
 			path = Composition;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				80D53AA029DC33F70097E163 /* SceneDelegate.swift in Sources */,
 				80D53AE429DC3F480097E163 /* CommonService.swift in Sources */,
 				80D53AD829DC38B40097E163 /* TestViewController.swift in Sources */,
+				80D53AF129DC48AF0097E163 /* Composor.swift in Sources */,
 				80D53AE129DC3B4A0097E163 /* CDImageData+CoreDataClass.swift in Sources */,
 				80D53AEB29DC42FF0097E163 /* LandingViewModel.swift in Sources */,
 				80D53AE929DC42F20097E163 /* LandingViewController.swift in Sources */,

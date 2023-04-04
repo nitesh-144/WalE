@@ -15,7 +15,18 @@ protocol CoordinatorDependencyProtocol{
 protocol CoordinatorProtocol{
     var dependency: CoordinatorDependencyProtocol { get set }
     var rootNavigationVC: UINavigationController { get set }
-    func startFlow()
+    func startFlow() -> LandingViewControllerProtocol
+}
+
+class ImageOftheDayCoordinatorDependency: CoordinatorDependencyProtocol{
+    
+    var service: CommonServiceProtocol
+    var landingViewBuilder: LandingViewBuilderProtocol
+    
+    init(withService service: CommonServiceProtocol, landingViewBuilder landingBuilder: LandingViewBuilderProtocol){
+        self.service = service
+        self.landingViewBuilder = landingBuilder
+    }
 }
 
 class ImageOftheDayFeatureCoordinator: CoordinatorProtocol{
@@ -27,7 +38,7 @@ class ImageOftheDayFeatureCoordinator: CoordinatorProtocol{
         self.dependency = dependency
         self.rootNavigationVC = root
     }
-    func startFlow() {
-        
+    func startFlow() -> LandingViewControllerProtocol {
+        return dependency.landingViewBuilder.build()
     }
 }
